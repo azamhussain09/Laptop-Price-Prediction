@@ -1,0 +1,44 @@
+this are unique values of company:
+
+'Apple', 'HP', 'Acer', 'Asus', 'Dell', 'Lenovo', 'Chuwi', 'MSI','Microsoft', 'Toshiba', 'Huawei', 'Xiaomi', 'Vero', 'Razer','Mediacom', 'Samsung', 'Google', 'Fujitsu', 'LG'
+
+this are unique values of TypeName:
+
+Ultrabook', 'Notebook', 'Netbook', 'Gaming', '2 in 1 Convertible','Workstation'
+
+unique values of ram:
+
+8, 16,  4,  2, 12,  6, 32, 24, 64
+
+values of touchscreen:
+
+0, 1
+
+
+values of ips:
+
+0, 1
+
+values of ppi:
+
+ranges from 90.58340172449303 to 352.4651472131677
+
+unique values of Cpu brand:
+
+'Intel Core i5', 'Intel Core i7', 'AMD Processor', 'Intel Core i3', 'Other Intel Processor'
+
+values of HDD:
+
+0,  500, 1000, 2000,   32,  128
+
+values of SSD:
+
+128,    0,  256,  512,   32,   64, 1000, 1024,   16,  768,  180, 240,    8
+
+values of Gpu brand:
+
+'Intel', 'AMD', 'Nvidia'
+
+values of os:
+
+'Mac', 'Others/No OS/Linux', 'Windows'

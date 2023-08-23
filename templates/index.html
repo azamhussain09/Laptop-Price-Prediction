@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laptop Price Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        select,
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Laptop Price Predictor</h1>
+    <form action="/predict" method="POST">
+        <label for="company">Company:</label>
+        <select name="company" required>
+            <option value="" disabled selected>Select a company</option>
+            <option value="Apple">Apple</option>
+            <option value="HP">HP</option>
+            <option value="Acer">Acer</option>
+            <option value="Asus">Asus</option>
+            <option value="Dell">Dell</option>
+            <option value="Lenovo">Lenovo</option>
+            <option value="Chuwi">Chuwi</option>
+            <option value="MSI">MSI</option>
+            <option value="Microsoft">Microsoft</option>
+            <option value="Toshiba">Toshiba</option>
+            <option value="Huawei">Huawei</option>
+            <option value="Xiaomi">Xiaomi</option>
+            <option value="Vero">Vero</option>
+            <option value="Razer">Razer</option>
+            <option value="Mediacom">Mediacom</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Google">Google</option>
+            <option value="Fujitsu">Fujitsu</option>
+            <option value="LG">LG</option>
+        </select><br>
+
+        <label for="typename">Type Name:</label>
+        <select name="typename" required>
+            <option value="" disabled selected>Select a type name</option>
+            <option value="Ultrabook">Ultrabook</option>
+            <option value="Notebook">Notebook</option>
+            <option value="Netbook">Netbook</option>
+            <option value="Gaming">Gaming</option>
+            <option value="2 in 1 Convertible">2 in 1 Convertible</option>
+            <option value="Workstation">Workstation</option>
+        </select><br>
+
+        <label for="ram">RAM:</label>
+        <select name="ram" required>
+            <option value="" disabled selected>Select RAM</option>
+            <option value="2">2 GB</option>
+            <option value="4">4 GB</option>
+            <option value="6">6 GB</option>
+            <option value="8">8 GB</option>
+            <option value="12">12 GB</option>
+            <option value="16">16 GB</option>
+            <option value="24">24 GB</option>
+            <option value="32">32 GB</option>
+            <option value="64">64 GB</option>
+        </select><br>
+
+        <label for="weight">Weight:</label>
+        <input type="text" name="weight" required><br>
+
+
+        <label for="touchscreen">Touchscreen:</label>
+        <select name="touchscreen" required>
+            <option value="" disabled selected>Select Touchscreen</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br>
+
+        <label for="ips">Ips Panel:</label>
+        <select name="ips" required>
+            <option value="" disabled selected>Select ips panel</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br>
+                
+
+        <label for="cpubrand">CPU Brand:</label>
+        <select name="cpubrand" required>
+            <option value="" disabled selected>Select a CPU brand</option>
+            <option value="Intel Core i5">Intel Core i5</option>
+            <option value="Intel Core i7">Intel Core i7</option>
+            <option value="AMD Processor">AMD Processor</option>
+            <option value="Intel Core i3">Intel Core i3</option>
+            <option value="Other Intel Processor">Other Intel Processor</option>
+        </select><br>
+
+        <label for="hdd">HDD:</label>
+        <input type="number" name="hdd" required><br>
+
+        <label for="ssd">SSD:</label>
+        <input type="number" name="ssd" required><br>
+
+        <label for="gpubrand">GPU Brand:</label>
+        <select name="gpubrand" required>
+            <option value="" disabled selected>Select a GPU brand</option>
+            <option value="Intel">Intel</option>
+            <option value="AMD">AMD</option>
+            <option value="Nvidia">Nvidia</option>
+        </select><br>
+
+        <label for="os">Operating System:</label>
+        <select name="os" required>
+            <option value="" disabled selected>Select an operating system</option>
+            <option value="Mac">Mac</option>
+            <option value="Windows">Windows</option>
+            <option value="Others/No OS/Linux">Others/No OS/Linux</option>
+        </select><br>
+        <!-- Add similar select elements for Weight, Touchscreen, Ips, ppi, Cpu brand, HDD, SSD, Gpu brand, and OS -->
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
